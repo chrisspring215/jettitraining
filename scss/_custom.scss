@@ -1,0 +1,140 @@
+body
+{
+	background: #eee;
+}
+
+.flex-center {
+	height: 90%;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-text {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, .button, input, lable
+{
+	font-family: $roboto;
+	color: #555;
+}
+
+header {
+	background-color: $standard-orange;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+	margin-top: .4rem;
+	margin-bottom: .2rem;
+	color: #fff
+}
+
+p {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+
+img {
+	margin-bottom: 1em;
+}
+
+button, .button {
+	background: $standard-orange;
+	border: 2px solid #fff;
+	border-radius: .2em;
+	box-shadow: 0px 3px 10px #ccc;
+	color: #eee;
+
+	&:hover
+	{
+		background: $standard-orange - 20;
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #333;
+}
+
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+
+sup
+{
+	font-size: .45em;
+	position: relative;
+	left: .1em;
+	top: -.8em;
+}
+sub
+{
+	font-size: .45em;
+	position: relative;
+	bottom: .15em;
+	right: .2em;
+}
+
+button.disabled {
+    background: #666;
+    border-color: #ccc;
+    color: #ccc;
+
+    &:hover {
+        background: #666;
+        border-color: #ccc;
+        color: #ccc;
+    }
+}
+
+button:active, .button:active {
+    background-color: $standard-orange - 20;
+}
+
+button:focus, .button:focus {
+    background: $standard-orange - 20;
+}

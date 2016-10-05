@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JETTI REWARDS TRAINING | CHECK-IN</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/vendor/modernizr.js"></script>
+
+        <!-- WEB FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+
+        <!-- ROBOTS -->
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="medium-11 medium-push-1 columns">
+                    <h1>JETTI REWARDS TRAINING</h1>
+                </div>
+            </div>
+        </header>
+        <main class="flex-center">
+            <div class="row flex-text">
+                <div class="medium-5 columns page-text">
+                    <h2>Check In</h2>
+                    <p>We need some info so that we can get you the specific training you need to understand the program.</p>
+                    <p>Please fill out the fields to the right:</p>
+                </div>
+
+                <div class="medium-5 columns">      
+                    <label id="empName">
+                        <strong>What's your first inital and last name?</strong>
+                        <input id="empNameValue" type="text" placeholder="f. lastname">
+                    </label>
+
+                    <label id="empJob" class="hide">
+                        <strong>What is your title?</strong>
+                        <select id="empJobValue">
+                            <option selected="selected" disabled value='none'>Select One</option>
+                            <option value="manager">Manager</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+
+                    <label id="empRest" class="hide">
+                        <strong>What company do you work at?</strong>
+                        <select id="empRestValue">
+                            <option selected="selected" disabled value='none'>Select One</option>
+                        </select>
+                    </label>
+
+                    <label id="empLoc" class="hide">
+                        <strong>What location?</strong>
+                        <select id="empLocValue">
+                            <option selected="selected" disabled value='none'>Select One</option>
+                        </select>
+                    </label>
+                    <button id="submissionButton" class="expand" onclick="empNameValueCheck()">ENTER YOUR NAME ABOVE</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="medium-12 columns">
+                    <span>&nbsp;</span>
+                </div>
+            </div>
+        </footer>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-84921817-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        <script src="js/checkin.js"></script>
+    </body>
+</html>
