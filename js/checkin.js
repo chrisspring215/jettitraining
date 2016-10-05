@@ -61,11 +61,19 @@ function empLocValueCheck() {
 	}
 
 	else {
-		launchSlideShow(empNameValue, empJobValue, empRestValue.value, empLocValue.value);
+
+		var finalEmpNameValue = document.getElementById('empNameValue').value;
+		var finalEmpJobValue = document.getElementById('empJobValue').value;
+		var finalEmpRestValue = document.getElementById('empRestValue').value;
+		var finalEmpLocValue = document.getElementById('empLocValue').value;
+
+		launchSlideShow(finalEmpNameValue, finalEmpJobValue, finalEmpRestValue, finalEmpLocValue);
 	}
 }
 
 function empRestValueCheck() {
+
+	empLocValue.innerHTML = '<option selected="selected" disabled="" value="none">Select One</option';
 
 	if (empRestValue.value === 'none') {
 		submissionButton.innerHTML = 'PLEASE SELECT A COMPANY';
